@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import { useNavigate } from "react-router-dom";
 import { Wrapper } from "../CreateAdsMain";
 import "./CreateAdsForm.css";
@@ -80,10 +82,14 @@ const CreateAdsForm = ({ adTypes }) => {
           </Col>
 
           <Col md={6}>
-            <Form.Group controlId="formGridEmail" className="mb-4">
-            <Form.Label className="bold">Email address</Form.Label>
-              <Form.Control type="text" placeholder="Enter email" />
-            </Form.Group>
+          <Form.Group controlId="formGridButtonLabel" className="mb-4">
+            <Form.Label className="bold">Button Label</Form.Label>
+          <DropdownButton id="dropdown-basic-button" title="Select a label that best suit your ad" >
+      <Dropdown.Item href="#/action-1" className="w-100">Action</Dropdown.Item>
+      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+    </DropdownButton>
+    </Form.Group>
           </Col>
         </Row>
 

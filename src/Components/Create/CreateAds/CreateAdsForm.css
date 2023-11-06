@@ -5,3 +5,19 @@ textarea.form-control {
 .bold{
     font-weight: bold;
 }
+#dropdown-basic-button{
+width:100% !important;
+background-color: white;
+color:black;
+text-align: left;
+border:1px solid #E0E0E0
+}
+
+.dropdown-menu{
+    width:100% !important
+}
+
+.dropdown-toggle::after {
+    float:right;
+    margin-top:10px;
+}
